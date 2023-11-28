@@ -27,15 +27,19 @@ select{
 /* container style */
 main{
     background-color: rgba(127,255,212,255);
+    min-height: 800px;
     padding: 100px;
 }
+
+
+
 
 .container{
     max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
+    padding: 20px;
 }
 .box{
     width: calc(100/2);
@@ -44,3 +48,9 @@ main{
    
 }
 
+/* js class style */
+
+.square{
+    border: 3px solid white;
+    cursor: crosshair;
+}
