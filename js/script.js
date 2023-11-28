@@ -5,33 +5,26 @@
 
 // L’utente clicca su un bottone che genererà una griglia di gioco quadrata.
 const playGame = document.querySelector(".play");
-const gridElement = document.querySelector(".grid");
 
-playGame.addEventListener("click",
-   
+
+playGame.addEventListener("click", function(){
+    
+    const container = document.querySelector(".grid");
+
+    for (let i = 1; i <= 100; i++){
+            
+       const square = document.createElement("div");
+       square.classList.add("square");
+       container.append(square);
+       square.append(i);
 
     
-       function(gridElement){
-            for (let i = 1; i <= 100; i++){
+  
+    }
+       
             
-                const newElement = document.createMyElement("div", "square");
-                gridElement.append(newElement);
+} );
 
-            }
-        }
-            
-    
-
-);
-
-
-
-function createMyElement (tagtype, classname){
-    const currentElement = document.createElement(tagtype);
-    currentElement.classList.add(classname);
-
-    return currentElement;
-}
 
 
 
