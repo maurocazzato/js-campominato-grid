@@ -66,3 +66,9 @@ main{
     border: 1px solid black;
     
 }
+
+.clicked{
+    background-color: aqua;
+}
+    
+

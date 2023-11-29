@@ -5,7 +5,9 @@
 
 // L’utente clicca su un bottone che genererà una griglia di gioco quadrata.
 const playGame = document.querySelector(".play");
-
+// const normal = document.querySelector("#diff1");
+// const medium = document.querySelector("#diff2");
+// const hard = document.querySelector("#diff3");
 
 playGame.addEventListener("click", function(){
     
@@ -18,7 +20,12 @@ playGame.addEventListener("click", function(){
        container.append(square);
        square.append(i);
 
-    
+        square.addEventListener("click", function(){
+
+            console.log("hai cliccato una cella" , i);
+            square.classList.add("clicked");
+        })
+
   
     }
        
